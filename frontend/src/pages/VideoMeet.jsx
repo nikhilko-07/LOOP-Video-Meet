@@ -675,7 +675,7 @@ export default function VideoMeetComponent() {
           ) : (
             <></>
           )}
-          <div>
+          <div >
             <video
               style={{ borderRadius: "0.5rem" }}
               className="OwnerVideo"

@@ -58,7 +58,7 @@ export default function Authentication() {
         className="row"
         style={{
           borderRadius: "1%",
-          border: "2px solid gray",
+          border: "2px solid black",
           height: "60%",
           width: "25%",
           padding: "2%",
@@ -72,7 +72,7 @@ export default function Authentication() {
             justifyContent: "center",
           }}
         >
-          <h1 style={{ color: "gray" }}>
+          <h1 style={{ color: "black" }}>
             {formstate === 0 ? "Login" : "Register"}
           </h1>
           <br />
@@ -90,12 +90,12 @@ export default function Authentication() {
         >
           <button
             style={{
-              backgroundColor: formstate === 1 ? "gray" : "#4884D0",
+              backgroundColor: formstate === 1 ? "gray" : "black",
               width: "25%",
               color: "white",
               border: "none",
               height: "80%",
-              borderRadius: "0.3rem",
+              borderRadius: "0.5rem",
             }} // Change color based on formState
             onClick={() => {
               setFormState(0);
@@ -105,12 +105,12 @@ export default function Authentication() {
           </button>
           <button
             style={{
-              backgroundColor: formstate === 1 ? "#4884D0" : "gray",
+              backgroundColor: formstate === 1 ? "black" : "gray",
               width: "25%",
               color: "white",
               border: "none",
               height: "80%",
-              borderRadius: "0.3rem",
+              borderRadius: "0.5rem",
             }} // Change color based on formState
             onClick={() => {
               setFormState(1);
@@ -126,7 +126,7 @@ export default function Authentication() {
               fontSize: "2vh",
               boxSizing: "border-box",
               border: "none",
-              borderBottom: "2px solid gray",
+              borderBottom: "2px solid black",
               backgroundColor: "white",
               color: "black",
               // marginTop: "-10%"
@@ -147,7 +147,7 @@ export default function Authentication() {
             fontSize: "2vh",
             boxSizing: "border-box",
             border: "none",
-            borderBottom: "2px solid gray",
+            borderBottom: "2px solid black",
             backgroundColor: "white",
             color: "black",
             // marginTop: "-10%"
@@ -167,7 +167,7 @@ export default function Authentication() {
             fontSize: "2vh",
             boxSizing: "border-box",
             border: "none",
-            borderBottom: "2px solid gray",
+            borderBottom: "2px solid black",
             backgroundColor: "white",
             color: "black",
             display: "inline",
@@ -187,8 +187,10 @@ export default function Authentication() {
             display: "inline",
             width: "20%",
             height: "10%",
-            border: "2px solid gray",
-            borderRadius: "5%",
+            border: "none",
+            backgroundColor:"black",
+            color:"white",
+            borderRadius: "0.5rem",
           }}
           onClick={tooglePassword}
         >
@@ -201,8 +203,9 @@ export default function Authentication() {
             backgroundColor: "black",
             color: "white",
             height: "10%",
-            backgroundColor: "#4884D0",
+            backgroundColor: "black",
             border: "none",
+            borderRadius:"0.5rem"
           }}
           type="submit"
           fullWidth
