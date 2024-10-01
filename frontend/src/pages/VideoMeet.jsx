@@ -21,7 +21,7 @@ const peerConfigConnections = {
   iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
 };
 export default function VideoMeetComponent() {
-  const routeTo = useNavigate()
+  const routeTo = useNavigate();
   const ref = useRef(null);
   var socketRef = useRef();
   let socketIdRef = useRef();
@@ -527,7 +527,6 @@ export default function VideoMeetComponent() {
             alignItems: "center",
           }}
         >
-           
           <div>
             <div>
               <video
@@ -582,12 +581,13 @@ export default function VideoMeetComponent() {
                   fontSize: "1rem",
                 }}
                 variant="contained"
-                onClick={()=>{routeTo("/home")}}
+                onClick={() => {
+                  routeTo("/home");
+                }}
               >
                 Home
               </Button>
             </div>
-            
           </div>
         </div>
       ) : (
@@ -677,6 +677,7 @@ export default function VideoMeetComponent() {
           )}
           <div>
             <video
+              style={{ borderRadius: "0.5rem" }}
               className="OwnerVideo"
               ref={localVideoref}
               autoPlay
@@ -687,7 +688,6 @@ export default function VideoMeetComponent() {
           <div
             className="row-cols-lg-4 row-cols-md-3 row-cols-sm-1 conferenceView"
             style={{
-              border: "2px solid blue",
               display: "flex",
               height: "90vh",
             }}
@@ -719,11 +719,10 @@ export default function VideoMeetComponent() {
                 ></video>
 
                 <button
-               style={{ 
-                position: 'absolute', 
-                top:"400px"
-               
-              }}
+                  style={{
+                    position: "absolute",
+                    top: "400px",
+                  }}
                   onClick={() => {
                     const videoElement = document.querySelector(".UsersVideo");
                     if (videoElement.requestFullscreen) {

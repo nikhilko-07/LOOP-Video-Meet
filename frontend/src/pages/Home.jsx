@@ -86,8 +86,8 @@ function HomeComponent() {
                 }}
               >
                 <h4>
-                  Celebrate from anywhere by connecting <br></br>with Google
-                  Meet.
+                  Celebrate from anywhere by connecting <br></br>with LOOP
+                  MEET.
                 </h4>
               </div>
               <div style={{ display: "flex", justifyContent: "start" }}>
