@@ -11,14 +11,11 @@ body {
 .buttonContainers {
     display: flex;
     height: 10vh;
-    border: 2px solid white;
     justify-content: center;
     width: 100%;
     align-items: center;
-    border: 2px solid black;
 }
 .BTNContainer{
-    border: 2px solid rgb(0, 0, 0);
     width: 100%;
     height: 10%;
     position: sticky;
@@ -42,7 +39,6 @@ body {
     height: 20%;
     width: 20%;
     border-radius: 0.5rem;
-    border: 2px solid green;
     display: flex;
     margin-bottom: 10vh;
     position: fixed;
@@ -58,7 +54,6 @@ body {
     z-index: 999;
     position: absolute; /* Change to absolute to position it relative to its nearest positioned ancestor */
     bottom: 0; /* Position it at the bottom */
-    background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
     right: 0;
     
@@ -67,5 +62,4 @@ body {
 .conferenceView{
     height: 90%;
     width: 100%;
-    border: 5px solid red;
 }
