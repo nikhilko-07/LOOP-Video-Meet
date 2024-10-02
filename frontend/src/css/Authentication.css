@@ -86,13 +86,14 @@ body {
 }
 @media (max-width: 640px) {
   .main {
-    width: 50%;
-   
+    width: 80%;
+    height: 50%;
   }
 }
 @media (min-width: 768px) {
   .main {
     width: 50%;
+    height: 50%;
   }
 }
 @media (min-width: 1024px) {
