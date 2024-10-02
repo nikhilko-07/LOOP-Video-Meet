@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+}
+.header {
+  color: black;
+}
+.headercontainer {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 5%;
+}
+.headerButton {
+  width: 25%;
+  color: white;
+  border: none;
+  height: 80%;
+  border-radius: 0.5rem;
+}
+.FullName {
+  height: 10%;
+  font-size: 2vh;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: white;
+  color: black;
+}
+.UserName {
+  height: 10%;
+  font-size: 2vh;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: white;
+  color: black;
+}
+.Password {
+  height: 10%;
+  font-size: 2vh;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: white;
+  color: black;
+  display: inline;
+  width: 80%;
+}
+.toogleButton {
+  display: inline;
+  width: 20%;
+  height: 10%;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+}
+.submitButton {
+  background-color: black;
+  color: white;
+  height: 10%;
+  border: none;
+  border-radius: 0.5rem;
+}
+.main {
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  height: 60%;
+  width: 25%;
+  padding: 2%;
+}
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .main {
+    width: 50%;
+   
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    width: 40%;
+  }
+}
+@media (min-width: 1280px) {
+    .main{
+        width: 30%;
+    }
+} 
+@media (min-width: 1536px) { 
+    .main{
+        width: 20%;
+    }
+ }

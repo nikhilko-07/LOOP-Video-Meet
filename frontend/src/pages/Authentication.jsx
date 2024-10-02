@@ -1,7 +1,7 @@
 import * as React from "react";
 import { AuthContext } from "../contexts/AuthContext.jsx";
 import { Snackbar } from "@mui/material";
-
+import "../css/Authentication.css";
 // TODO remove, this demo shouldn't need to reset the theme.
 
 export default function Authentication() {
@@ -45,25 +45,8 @@ export default function Authentication() {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "5%",
-      }}
-    >
-      <div
-        className="row"
-        style={{
-          borderRadius: "1%",
-          border: "2px solid black",
-          height: "60%",
-          width: "25%",
-          padding: "2%",
-        }}
-      >
+    <div className="page">
+      <div className="row main">
         <div
           className="col-12"
           style={{
@@ -72,30 +55,14 @@ export default function Authentication() {
             justifyContent: "center",
           }}
         >
-          <h1 style={{ color: "black" }}>
-            {formstate === 0 ? "Login" : "Register"}
-          </h1>
+          <h1 className="header">{formstate === 0 ? "Login" : "Register"}</h1>
           <br />
         </div>
-        <div
-          className="col-12"
-          style={{
-            display: "flex",
-            height: "10%",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "5%",
-            marginBottom: "5%",
-          }}
-        >
+        <div className="col-12 headercontainer">
           <button
+            className="headerButton"
             style={{
               backgroundColor: formstate === 1 ? "gray" : "black",
-              width: "25%",
-              color: "white",
-              border: "none",
-              height: "80%",
-              borderRadius: "0.5rem",
             }} // Change color based on formState
             onClick={() => {
               setFormState(0);
@@ -104,13 +71,9 @@ export default function Authentication() {
             Login
           </button>
           <button
+            className="headerButton"
             style={{
               backgroundColor: formstate === 1 ? "black" : "gray",
-              width: "25%",
-              color: "white",
-              border: "none",
-              height: "80%",
-              borderRadius: "0.5rem",
             }} // Change color based on formState
             onClick={() => {
               setFormState(1);
@@ -121,16 +84,7 @@ export default function Authentication() {
         </div>
         {formstate === 1 ? (
           <input
-            style={{
-              height: "10%",
-              fontSize: "2vh",
-              boxSizing: "border-box",
-              border: "none",
-              borderBottom: "2px solid black",
-              backgroundColor: "white",
-              color: "black",
-              // marginTop: "-10%"
-            }}
+            className="FullName"
             id="name"
             label="name"
             name="name"
@@ -142,16 +96,7 @@ export default function Authentication() {
         )}
 
         <input
-          style={{
-            height: "10%",
-            fontSize: "2vh",
-            boxSizing: "border-box",
-            border: "none",
-            borderBottom: "2px solid black",
-            backgroundColor: "white",
-            color: "black",
-            // marginTop: "-10%"
-          }}
+          className="UserName"
           id="username"
           label="username"
           name="username"
@@ -162,18 +107,7 @@ export default function Authentication() {
         />
 
         <input
-          style={{
-            height: "10%",
-            fontSize: "2vh",
-            boxSizing: "border-box",
-            border: "none",
-            borderBottom: "2px solid black",
-            backgroundColor: "white",
-            color: "black",
-            display: "inline",
-            width: "80%",
-            // marginTop: "-10%"
-          }}
+          className="Password"
           name="password"
           label="Password"
           type={passwordShow ? "text" : "password"}
@@ -182,31 +116,13 @@ export default function Authentication() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <button
-          style={{
-            display: "inline",
-            width: "20%",
-            height: "10%",
-            border: "none",
-            backgroundColor:"black",
-            color:"white",
-            borderRadius: "0.5rem",
-          }}
-          onClick={tooglePassword}
-        >
+        <button className="toogleButton" onClick={tooglePassword}>
           See
         </button>
 
         <p style={{ color: "red" }}>{error}</p>
         <button
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            height: "10%",
-            backgroundColor: "black",
-            border: "none",
-            borderRadius:"0.5rem"
-          }}
+          className="submitButton"
           type="submit"
           fullWidth
           variant="contained"
