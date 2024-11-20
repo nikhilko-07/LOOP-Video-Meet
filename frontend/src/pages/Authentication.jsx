@@ -84,7 +84,7 @@ export default function Authentication() {
         </div>
         {formstate === 1 ? (
           <input
-            className="FullName"
+            className="FullName1"
             id="name"
             label="name"
             name="name"
@@ -96,7 +96,7 @@ export default function Authentication() {
         )}
 
         <input
-          className="UserName"
+          className="UserName1"
           id="username"
           label="username"
           name="username"
@@ -107,7 +107,7 @@ export default function Authentication() {
         />
 
         <input
-          className="Password"
+          className="Password1"
           name="password"
           label="Password"
           type={passwordShow ? "text" : "password"}

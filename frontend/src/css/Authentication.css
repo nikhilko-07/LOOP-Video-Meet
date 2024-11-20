@@ -24,7 +24,7 @@ body {
   height: 80%;
   border-radius: 0.5rem;
 }
-.FullName {
+.FullName1 {
   height: 10%;
   font-size: 2vh;
   box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
   background-color: white;
   color: black;
 }
-.UserName {
+.UserName1 {
   height: 10%;
   font-size: 2vh;
   box-sizing: border-box;
@@ -42,7 +42,7 @@ body {
   background-color: white;
   color: black;
 }
-.Password {
+.Password1 {
   height: 10%;
   font-size: 2vh;
   box-sizing: border-box;
@@ -94,13 +94,13 @@ body {
   .submitButton{
     height: 40px;
   }
-  .UserName{
+  .UserName1{
     font-size: 1rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 1rem;
   }
-  .Password{
+  .Password1{
     font-size: 1rem;
   }
   .headerButton{
@@ -120,13 +120,13 @@ body {
   .submitButton{
     height: 40px;
   }
-  .UserName{
+  .UserName1{
     font-size: 1rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 1rem;
   }
-  .Password{
+  .Password1{
     font-size: 1rem;
   }
   .headerButton{
@@ -146,13 +146,13 @@ body {
   .submitButton{
     height: 40px;
   }
-  .UserName{
+  .UserName1{
     font-size: 1rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 1rem;
   }
-  .Password{
+  .Password1{
     font-size: 1rem;
   }
   .headerButton{
@@ -171,13 +171,13 @@ body {
   .submitButton{
     height: 40px;
   }
-  .UserName{
+  .UserName1{
     font-size: 1rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 1rem;
   }
-  .Password{
+  .Password1{
     font-size: 1rem;
   }
   .headerButton{
@@ -197,13 +197,13 @@ body {
   .submitButton{
     height: 60px;
   }
-  .UserName{
+  .UserName1{
     font-size: 2rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 2rem;
   }
-  .Password{
+  .Password1{
     font-size: 2rem;
   }
   .headerButton{
@@ -226,13 +226,13 @@ body {
     height: 60px;
     font-size: 2rem;
   }
-  .UserName{
+  .UserName1{
     font-size: 2rem;
   }
-  .FullName{
+  .FullName1{
     font-size: 2rem;
   }
-  .Password{
+  .Password1{
     font-size: 2rem;
   }
   .headerButton{
