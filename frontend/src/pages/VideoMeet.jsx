@@ -523,8 +523,9 @@ export default function VideoMeetComponent() {
           }}
         >
           <div>
-            <div>
+            <div  className="startingvid">
               <video
+             
                 style={{ borderRadius: "2rem" }}
                 ref={localVideoref}
                 autoPlay
@@ -543,10 +544,11 @@ export default function VideoMeetComponent() {
                 Are You Ready ?
               </h2>
             </div>
-            <div
+            <div className="getinfo"
               style={{ display: "flex", justifyContent: "center", gap: "2.5%" }}
             >
               <input
+              className="user"
                 id="outlined-basic"
                 style={{
                   borderRadius: "0.5rem",
@@ -561,7 +563,6 @@ export default function VideoMeetComponent() {
                   borderRadius: "0.5rem",
                   backgroundColor: "black",
                   color: "white",
-                  fontSize: "1rem",
                 }}
                 variant="contained"
                 onClick={connect}
@@ -573,7 +574,6 @@ export default function VideoMeetComponent() {
                   borderRadius: "0.5rem",
                   backgroundColor: "black",
                   color: "white",
-                  fontSize: "1rem",
                 }}
                 variant="contained"
                 onClick={() => {
