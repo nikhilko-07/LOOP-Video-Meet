@@ -107,6 +107,7 @@ function HomeComponent() {
                 }}
               >
                 <input
+                className="inp"
                   style={{
                     marginTop: "2.5%",
                     boxSizing: "border-box",

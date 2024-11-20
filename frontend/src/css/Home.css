@@ -64,17 +64,21 @@ body {
       font-size: 1rem;
     }
     .introimg{
-      height: 20vh;
-      width: 30vw;
+      z-index: -000;
+      display: none;
     }
     .button{
       width: 80px;
       height: 30px;
+      z-index: 99;
     }
     .button1{
       width: 80px;
       height: 30px;
       margin-top: 20%;
+      z-index: 99;
+    }.inp{
+      z-index: 99;
     }
 }
 /* NORMAL SIZE */
@@ -87,24 +91,28 @@ body {
   height: 20%;
   font-size: 1.5rem;
   }
-  .homeintro{
-    margin-left: 0%;
-  }
+  
   .homeintro div h1, h4{
     font-size: 1rem;
+    z-index: 99;
   }
   .introimg{
-    height: 20vh;
-    width: 30vw;
+    z-index: -000;
+    display: none;
   }
   .button{
     width: 80px;
     height: 30px;
+    z-index: 99;
   }
   .button1{
     width: 80px;
     height: 30px;
     margin-top: 20%;
+    z-index: 99;
+  }
+  .inp{
+    z-index: 99;
   }
 }
 
@@ -118,28 +126,27 @@ body {
   height: 20%;
   font-size: 1.5rem;
   }
-  .homeintro{
-    margin-top: 70%;
-  }
+ 
   .homeintro div h1, h4{
     font-size: 1.3rem;
   }
   .introimg{
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    margin-left: -55vw;
+    display: none;
+    z-index: -99;
   }
   .button{
     width: 80px;
     height: 30px;
+    z-index: 99;
   }
   .button1{
     width: 80px;
     height: 30px;
     margin-top: 20%;
+    z-index: 99;
+  }
+  .inp{
+    z-index: 99;
   }
 }
 
@@ -153,29 +160,27 @@ body {
     height: 20%;
     font-size: 1.5rem;
     }
-    .homeintro{
-      margin-top: 30vh;
-    }
+    
     .homeintro div h1, h4{
       font-size: 1.3rem;
     }
     .introimg{
-      margin-top: 10vh;
-      height: 30vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80vw;
-      margin-left: -55vw;
+      display: none;
+      z-index: -99;
     }
     .button{
       width: 80px;
       height: 30px;
+      z-index: 99;
     }
     .button1{
       width: 80px;
       height: 30px;
       margin-top: 20%;
+      z-index: 99;
+    }
+    .inp{
+      z-index: 99;
     }
 }
 
