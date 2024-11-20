@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import {  useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import style from '../css/Home.css'
 
 export const LandingPage = () => {
   const routeTo = useNavigate()
@@ -25,21 +26,12 @@ export const LandingPage = () => {
       }}
     >
       <div>
-        <div>
-          <h1 style={{fontSize:"5rem"}}>WELCOME TO LOOP </h1>
+        <div className="head">
+          <h1 >WELCOME TO LOOP </h1>
         </div>
         <br></br>
         <div style={{display:'flex', alignItems:"center", justifyContent:"center"}}>
-          <button  style={{
-                  marginTop: "2.5%",
-                  width: "10%",
-                  backgroundColor: "black",
-                  border: "none",
-                  color: "white",
-                  fontSize: "1rem",
-                  borderRadius: "0.5rem",
-                  fontFamily: "sans-serif",
-                  height:"4vh",}}  onClick={()=>{routeTo("/home")}}>click</button>
+          <button  className="homebtn"  onClick={()=>{routeTo("/home")}}>click</button>
         </div>
       </div>
     </div>

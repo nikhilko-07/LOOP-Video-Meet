@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import slider1 from '../images/slider1.jpeg';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import  "../css/Home.css"
 function HomeComponent() {
   let navigate = useNavigate();
   const [meetingCode, setMeetingCode] = useState("");
@@ -92,17 +92,7 @@ function HomeComponent() {
               </div>
               <div style={{ display: "flex", justifyContent: "start" }}>
                 <button
-                  style={{
-                    marginTop: "2.5%",
-                    width: "20%",
-                    height:"4vh",
-                    backgroundColor: "black",
-                    border: "none",
-                    color: "white",
-                    fontSize: "1rem",
-                    borderRadius: "0.5rem",
-                    fontFamily: "sans-serif",
-                  }}
+                  className="button"
                   onClick={copyToClipboard}
                 >
                   Code
@@ -127,17 +117,7 @@ function HomeComponent() {
                   onChange={(e) => setMeetingCode(e.target.value)}
                 />
                 <button
-                  style={{
-                    marginTop: "2.5%",
-                    width: "20%",
-                    backgroundColor: "black",
-                    border: "none",
-                    color: "white",
-                    fontSize: "1rem",
-                    borderRadius: "0.5rem",
-                    fontFamily: "sans-serif",
-                    height:"4vh",
-                  }}
+                className="button"
                   onClick={handleJoinVideoCall}
                 >
                   Join
@@ -165,17 +145,8 @@ function HomeComponent() {
               }}
             >
               <button
-                style={{
-                  marginTop: "2.5%",
-                  width: "10%",
-                  backgroundColor: "black",
-                  border: "none",
-                  color: "white",
-                  fontSize: "1rem",
-                  borderRadius: "0.5rem",
-                  fontFamily: "sans-serif",
-                  height:"4vh",
-                }}
+              className="button1"
+              
                 onClick={() => {
                   navigate("/");
                 }}
@@ -183,17 +154,8 @@ function HomeComponent() {
                 Back
               </button>
               <button
-                style={{
-                  marginTop: "2.5%",
-                  width: "10%",
-                  backgroundColor: "black",
-                  border: "none",
-                  color: "white",
-                  fontSize: "1rem",
-                  borderRadius: "0.5rem",
-                  fontFamily: "sans-serif",
-                  height:"4vh",
-                }}
+              className="button1"
+          
                 onClick={() => {
                   localStorage.removeItem("token");
                   navigate("/auth");
