@@ -115,7 +115,6 @@ body {
     z-index: 99;
   }
 }
-
 /* I PHONE 13 ONE PLUS*/
 @media(min-width: 376px) and (max-width: 425px){
   .head h1{
@@ -149,7 +148,6 @@ body {
     z-index: 99;
   }
 }
-
 /* I PHONE 13 MAX */
 @media (min-width: 426px) and (max-width: 767px){
   .head h1{
@@ -183,8 +181,6 @@ body {
       z-index: 99;
     }
 }
-
-
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px){
   .head h1{
