@@ -72,7 +72,7 @@ function HomeComponent() {
               alignItems: "center",
             }}
           >
-            <div style={{ marginLeft: "20%" }}>
+            <div className="homeintro" >
               <div style={{ display: "flex", justifyContent: "start" }}>
                 <h1>
                   Video calls and meetings benefit's <br></br>for everyone
@@ -166,7 +166,7 @@ function HomeComponent() {
             </div>
             <br></br>
             <div style={{ height:"50%", marginTop:"20%",width:"50%",marginLeft:"20%",}}>
-                <img style={{ height:"100%",width:"100%"}} src={slider1}></img>
+                <img className="introimg" src={slider1}></img>
             </div>
           </div>
         </div>
