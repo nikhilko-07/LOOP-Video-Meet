@@ -47,8 +47,6 @@ export const AuthProvider = ({ children }) => {
     };
     
 
-   
-   
     const data = {
       handleRegister, handleLogin
     };

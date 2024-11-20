@@ -58,7 +58,8 @@ body {
     bottom: 0; /* Position it at the bottom */
     border-radius: 0.5rem;
     right: 0;
-    
+    border: 2px solid gray;
+    padding: 2.5%;
 }
 
 .conferenceView{
@@ -68,6 +69,20 @@ body {
 
 .getinfo Button{
     font-size: 1rem;
+}
+.UsersVideo{
+    width: 100%;
+    display: flex;
+}
+.close{
+    width: 40%;
+    font-size: 1rem;
+    margin-left: 5%;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 1%;
+    border-radius: 0.5rem;
 }
 /* I PHONE 5 */
 @media (min-width: 0px) and (max-width: 320px){
@@ -90,6 +105,20 @@ body {
         width: 20%;
         font-size: 0.7rem;
     }
+    .OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 70%;
+        background-color: white;
+        
+    }
+    .chattingArea input{
+        height: 8vh;
+        width: 70%;
+        border: 2px solid black;
+    }
+   
 }
 /* NORMAL SIZE */
 @media (min-width: 321px) and (max-width: 375px){
@@ -111,6 +140,18 @@ body {
     .getinfo Button{
         width: 20%;
         font-size: 0.7rem;
+    }.OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 70%;
+        background-color: white;
+        margin-bottom: 15%;
+    }
+    .chattingArea input{
+        height: 6vh;
+        width: 70%;
+        border: 2px solid black;
     }
 }
 /* I PHONE 13 ONE PLUS*/
@@ -135,6 +176,18 @@ body {
     .getinfo Button{
         width: 20%;
         font-size: 0.8rem;
+    }.OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 70%;
+        background-color: white;
+        margin-bottom: 15%;
+    }
+    .chattingArea input{
+        height: 6vh;
+        width: 70%;
+        border: 2px solid black;
     }
 }
 /* I PHONE 13 MAX */
@@ -159,6 +212,18 @@ body {
     .getinfo Button{
         width: 20%;
         font-size: 0.8rem;
+    }.OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 70%;
+        background-color: white;
+        margin-bottom: 15%;
+    }
+    .chattingArea input{
+        height: 6vh;
+        width: 70%;
+        border: 2px solid black;
     }
 }
 
@@ -185,6 +250,23 @@ body {
         width: 20%;
         font-size: 0.8rem;
     }
+    .UsersVideo{
+        width: 100vw;
+        height: 50%;
+    }
+    .OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 50%;
+        background-color: white;
+        margin-bottom: 15%;
+    }
+    .chattingArea input{
+        height: 6vh;
+        width: 70%;
+        border: 2px solid black;
+    }
 }
 /* Foldable Mobile */
 @media (min-width: 1024px) and (max-width: 1439px){
@@ -208,5 +290,23 @@ body {
     .getinfo Button{
         width: 20%;
         font-size: 0.8rem;
+    }.UsersVideo{
+        width: 100vw;
+        height: 50%;
     }
+    .OwnerVideo{
+        width: 50%;
+    }
+    .chatContainer{
+        width: 30%;
+        height: 80%;
+        background-color: white;
+
+    }
+    .chattingArea input{
+        height: 6vh;
+        width: 70%;
+        border: 2px solid black;
+    }
+    
 }

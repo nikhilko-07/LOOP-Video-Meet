@@ -523,9 +523,8 @@ export default function VideoMeetComponent() {
           }}
         >
           <div>
-            <div  className="startingvid">
+            <div className="startingvid">
               <video
-             
                 style={{ borderRadius: "2rem" }}
                 ref={localVideoref}
                 autoPlay
@@ -544,11 +543,12 @@ export default function VideoMeetComponent() {
                 Are You Ready ?
               </h2>
             </div>
-            <div className="getinfo"
+            <div
+              className="getinfo"
               style={{ display: "flex", justifyContent: "center", gap: "2.5%" }}
             >
               <input
-              className="user"
+                className="user"
                 id="outlined-basic"
                 style={{
                   borderRadius: "0.5rem",
@@ -592,6 +592,7 @@ export default function VideoMeetComponent() {
               <div className="chatContainer">
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
                   Chat
+                  <button className="close"  onClick={() => setModal(!showModal)}>Close</button>
                 </h1>
 
                 <div className="chattingDisplay">
@@ -637,13 +638,6 @@ export default function VideoMeetComponent() {
                   }}
                 >
                   <input
-                    style={{
-                      marginLeft: "2%",
-                      height: "4vh",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      display: "flex",
-                    }}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     id="outlined-basic"
@@ -664,13 +658,14 @@ export default function VideoMeetComponent() {
                   >
                     Send
                   </Button>
+                  
                 </div>
               </div>
             </div>
           ) : (
             <></>
           )}
-          <div >
+          <div>
             <video
               style={{ borderRadius: "0.5rem" }}
               className="OwnerVideo"
@@ -688,19 +683,9 @@ export default function VideoMeetComponent() {
             }}
           >
             {videos.map((video) => (
-              <div key={video.socketId}>
+              <div className="userpar" key={video.socketId}>
                 {/* <button style={{marginLeft:"50%"}} onClick={(e) => handleSmallScreen(e.target.nextSibling)}>Click</button> */}
                 <video
-                  style={{
-                    marginBottom: "50%",
-                    borderRadius: "0.5rem",
-                    height: "40%",
-                    width: "auto",
-                    marginTop: "10%",
-                    marginRight: "0%",
-                    display: "flex",
-                    gap: "5%",
-                  }}
                   className="col UsersVideo"
                   data-socket={video.socketId}
                   ref={(ref) => {
@@ -714,10 +699,7 @@ export default function VideoMeetComponent() {
                 ></video>
 
                 <button
-                  style={{
-                    position: "absolute",
-                    top: "400px",
-                  }}
+                  className="fullscreen"
                   onClick={() => {
                     const videoElement = document.querySelector(".UsersVideo");
                     if (videoElement.requestFullscreen) {
